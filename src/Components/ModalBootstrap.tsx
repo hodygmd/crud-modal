@@ -143,7 +143,7 @@ export const ModalBootstrap=()=>{
                                     <td>{item.id}</td>
                                     <td>{item.name}</td>
                                     <td>{item.career}</td>
-                                    <td><img src={item.image} width={"200px"} height={"100px"} className={"border border-4 border-secondary rounded-pill"} alt={"image"}/></td>
+                                    <td><img src={item.image} width={"200px"} height={"100px"} className={"border border-4 border-secondary rounded-pill"} alt={"uploaded-image"}/></td>
                                     <td><Button color={"success"} outline onClick={()=>editElement(index)}>Edit</Button></td>
                                     <td><Button color={"danger"} outline onClick={()=>deleteElement(item.id)}>Delete</Button></td>
                                 </tr>
