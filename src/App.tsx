@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {ModalBootsrap} from "./Components/ModalBootstrao";
+import {ModalBootstrap} from "./Components/ModalBootstrap";
 
 function App() {
   return (
     <>
-      <ModalBootsrap/>
+      <ModalBootstrap/>
     </>
   );
 }

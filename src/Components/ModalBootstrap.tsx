@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Table } from 'reactstrap';
 import './style.css'
-export const ModalBootsrap=()=>{
+export const ModalBootstrap=()=>{
     const [id, setId] = useState('')
     const [name, setName] = useState('')
     const [career, setCareer] = useState('ISIC')
@@ -43,10 +43,10 @@ export const ModalBootsrap=()=>{
     const [indexToEdit, setIndexToEdit] = useState(0)
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        if(id==''||name==''||career==''||imageUrl==''){
+        if(id===''||name===''||career===''||imageUrl===''){
             alert('These fields cannot be null')
         }else{
-            if(edit==false){
+            if(edit===false){
                 setAlumn([...alumn,{id:id,name:name,career:career,image:imageUrl}])
             }else{
                 alumn[indexToEdit]={...alumn[indexToEdit],id:id,name:name,career:career,image:imageUrl}
